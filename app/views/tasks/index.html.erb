@@ -4,8 +4,11 @@
   <h2><%= task.name %></h2>
   <p><%= task.location %></p>
   <p><%= task.priority %></p>
+  <%= link_to "More info", task_path(task) %>
+  <%= link_to "Add new task", new_task_path  %>
+  <%= link_to "Delete task", task_path(task), method: :delete %>
 <% end %>
 
-<
+
 
 
